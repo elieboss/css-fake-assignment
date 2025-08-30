@@ -1,0 +1,202 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Georgia, Times, serif;
+    margin: 0;
+    padding: 0 24px;
+    background: #fff;
+    color: #222;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 320px 1fr;
+    column-gap: 48px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background: url("img/background-img.gif") no-repeat left top;
+    background-size: auto;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+header h1 {
+    margin: 9;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+nav {
+    grid-area: nav;
+    align-self: start;
+    margin-top: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 6px solid #d9d9d9;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    display: block;
+    padding: 14px 18px;
+    color: #4758f3;
+    text-decoration: none;
+    font-family: Georgia, Times, serif;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: none;
+    color: #4758f3;
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    align-self: start;
+    margin-top: 36px;
+    max-width: 820px;
+    width: 100%;
+}
+
+main h3 {
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 48px;
+    margin-bottom: 18px;
+}
+
+main ul {
+    list-style: disc inside;
+    margin: 0 0 0 1.2em;
+    padding: 0 0 0 0.2em;
+}
+
+main li a {
+    text-decoration: underline;
+    color: #0645ad;
+}
+
+footer {
+    grid-area: footer;
+    border-top: 2px solid #000;
+    text-align: center;
+    padding: 4px 0 20px 0;
+    font-size: 1.05rem;
+    color: #000;
+    letter-spacing: 0.04em;
+    font-family: Georgia, Times, serif;
+    margin-top: 36px;
+    text-transform: none;
+}
+
+/* Remove pointer cursor from everything except links */
+body, header, nav, main, footer {
+    cursor: default;
+}
+a {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: block;
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    header {
+        padding-top: 24px;
+        padding-bottom: 16px;
+        font-size: 1em;
+    }
+
+    nav {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 0 16px 0;
+    }
+
+    nav li {
+        border-bottom: none;
+        border-right: 4px solid #d9d9d9;
+        padding: 0;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav a {
+        padding: 10px 8px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    main {
+        margin-top: 16px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    main h3 {
+        font-size: 1.2em;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    footer {
+        padding: 8px 0 12px 0;
+        font-size: 0.95em;
+        margin-top: 16px;
+    }
+}
