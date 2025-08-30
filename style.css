@@ -67,7 +67,7 @@ nav li:last-child {
 nav a {
     display: block;
     padding: 14px 18px;
-    color: #4758f3;
+    color: #0645ad;
     text-decoration: none;
     font-family: Georgia, Times, serif;
     font-size: 1.15rem;
@@ -76,9 +76,14 @@ nav a {
 }
 
 nav a:hover {
-    background: none;
-    color: #4758f3;
-    text-decoration: underline;
+    background: #ffeb3b;
+    color: #0645ad;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #0645ad;
+    text-decoration: none;
 }
 
 main {
